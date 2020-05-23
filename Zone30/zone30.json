@@ -1,0 +1,42 @@
+{
+  "frameRate": 30,
+  "width": 1280,
+  "detector2": {
+    "detectionWindow": 3000000000,
+    "color": "#00FF00",
+    "distance": 4.300000190734863,
+    "name": "Lane2",
+    "line2": {
+      "y1": 412,
+      "x1": 102,
+      "y2": 600,
+      "x2": 100
+    },
+    "line1": {
+      "y1": 400,
+      "x1": 700,
+      "y2": 600,
+      "x2": 700
+    }
+  },
+  "detector1": {
+    "detectionWindow": 3000000000,
+    "color": "#FF0000",
+    "distance": 4,
+    "name": "Lane1",
+    "line2": {
+      "y1": 100,
+      "x1": 700,
+      "y2": 300,
+      "x2": 700
+    },
+    "line1": {
+      "y1": 100,
+      "x1": 100,
+      "y2": 300,
+      "x2": 100
+    }
+  },
+  "cameraName": "Logitech HD Webcam C270",
+  "height": 960
+}
