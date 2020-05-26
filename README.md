@@ -86,7 +86,9 @@ dans le répertorie d'installation de Processing (attention, pas le répertoire 
 'transit-2020-05-23-172629.log' comprenant la date et l'heure de lancement du programme.
 
 A l'intérieur de ce fichier, chaque détection est représentée par une ligne de la forme
+```
 Lane1, 2020-05-23 18:03:02, 15km/h
+```
 contenant
 - le nom du détecteur
 - la date
