@@ -1,7 +1,7 @@
 # Zone30
 Measure vehicle speeds using a webcam 
 
-
+----------------
 
 Zone30 permet de mesurer la vitesse des véhicules à l'aide d'une webcam, et de fournir des
 statistiques sous forme d'histogramme de vitesses et de nombre de véhicules par heure.
@@ -31,26 +31,26 @@ Installation
 Utilisation
 -----------
 
-La première chose va être de lire un flux vidéo sur votre caméra. Au démarrage, Zone30 affiche la liste des caméras disponibles, avec les résolutions et vitesses disponibles. Par exemple:
-
+La première chose va être de lire un flux vidéo sur votre caméra. Au démarrage, Zone30 affiche la liste des caméras disponibles dans la console Processing (la petite zone de texte sous le programme), avec les résolutions et vitesses disponibles. Par exemple:
+```
 Available cameras:
 name=Logitech HD Webcam C270,size=640x480,fps=5
 name=Logitech HD Webcam C270,size=640x480,fps=30
 name=Logitech HD Webcam C270,size=160x120,fps=5
 name=Logitech HD Webcam C270,size=160x120,fps=30
 ...
-
+```
 Choisissez la caméra que vous souhaitez utiliser, avec la résolution et le fps maximaux.
 
 Les paramètres de la caméra doivent être entrés avec un éditeur de texte dans le fichier zone30.json, présent dans le répertoire du sketch. Par exemple:
 
-{
-  "cameraName": "Logitech HD Webcam C270",
-  "frameRate": 30,
-  "width": 1280,
-  "height": 960,
-  ... (ne vous occupez pas des autres paramètres pour l'instant / l'ordre n'est pas important)
-}
+    {
+      "cameraName": "Logitech HD Webcam C270",
+     "frameRate": 30,
+      "width": 1280,
+      "height": 960,
+      ... (ne vous occupez pas des autres paramètres pour l'instant / l'ordre n'est pas important)
+    }
 
 Sauvez zone30.json et relancez Zone30, le programme devrait utiliser la caméra que vous avez spécifié. Si tout va bien jusque là, vous voyez maintenant l'image de la caméra sur laquelle se superposent deux détecteurs.
 
@@ -60,19 +60,19 @@ Quand vous arrêtez proprement le programme (en fermant la fenêtre, pas en appu
 
 Le dernier paramètre important est la distance réelle entre les deux lignes du détecteur. Sortez avec un décamètre et allez mesurer. Allez ensuite reporter ces distances (en mètres) dans zone30.json:
 
-{
-  "detector1": {
-    "distance": 10.25,
-    "name": "Voie montante",
-    ...
-  },
-  "detector2": {
-    "distance": 18.10,
-    "name": "Voie descendante",
-    ...
-  },
-  ..
-}
+    {
+      "detector1": {
+        "distance": 10.25,
+        "name": "Voie montante",
+        ...
+      },
+      "detector2": {
+        "distance": 18.10,
+        "name": "Voie descendante",
+        ...
+      },
+      ..
+    }
 
 Vous pouvez aussi en profiter pour donner des noms parlants aux deux détecteurs, et en modifier la couleur.
 
