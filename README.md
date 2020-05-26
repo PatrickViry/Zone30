@@ -1,4 +1,6 @@
 # Zone30
+Mesurer la vitesse des véhicules avec une webcam
+
 Measure vehicle speeds using a webcam 
 
 ----------------
@@ -14,24 +16,25 @@ et du nombre d'images par seconde de la caméra (fps, frames per second, plus d'
 
 Par exemple, avec 30 images par seconde on a une précision maximale de 33ms. Si la distance entre 2 repères
 est de 10m, alors on a une précision de
+```
     vers 30km/h -> 1km/h
     vers 40km/h -> 2km/h
     vers 50km/h -> 3km/h
     ...
     vers 100km/h -> 10km/h
-
+```
 Installation
 ------------
 
 - Installer Processing en suivant les instructions sur processing.org. Zone30 a été testé avec la version 3.5.4
-- Télécharger le sketch Zone30 sur ... et le dézipper à un endroit qui vous plait
+- Télécharger le sketch Zone30 et le dézipper à un endroit qui vous plait
 - Lancer Processing, ouvrir le sketch Zone30, le lancer en cliquant sur "Exécuter"
 
 
 Utilisation
 -----------
 
-La première chose va être de lire un flux vidéo sur votre caméra. Au démarrage, Zone30 affiche la liste des caméras disponibles dans la console Processing (la petite zone de texte sous le programme), avec les résolutions et vitesses disponibles. Par exemple:
+La première chose va être de lire un flux vidéo sur votre caméra. Au démarrage, Zone30 affiche la liste des caméras disponibles dans la console Processing (la petite zone de texte sous le programme, PAS dans la fenêtre image), avec les résolutions et vitesses disponibles. Par exemple:
 ```
 Available cameras:
 name=Logitech HD Webcam C270,size=640x480,fps=5
